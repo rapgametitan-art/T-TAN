@@ -1,4 +1,5 @@
 const VIDEOS = {
+  "4Cpg04eUIYE": "BEST OF BEST MIXXX",
   "H7m-WpdIF8U": "MUSE v2 (VOID STAR HARDER)",
   oc2q4gsDzuw: "ZERO POINT MIXXX",
   G7N0TrJIxV4: "VOID STAR MIXXX",
@@ -31,7 +32,7 @@ function play(id) {
   frameWrap.className = "frame";
 
   const frame = document.createElement("iframe");
-  frame.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0`;
+  frame.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1`;
   frame.title = VIDEOS[id];
   frame.allow =
     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
